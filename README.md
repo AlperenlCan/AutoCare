@@ -1,1 +1,3 @@
-# AutoCare
+# AutoCareFlutter
+
+Istinye University student project
