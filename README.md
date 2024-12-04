@@ -1,3 +1,3 @@
-# AutoCareFlutter
+# flutter_app
 
-Istinye University student project
+A new Flutter project.
