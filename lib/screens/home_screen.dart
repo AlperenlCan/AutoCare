@@ -24,6 +24,72 @@ class HomeScreen extends StatelessWidget {
           ), 
         ],
       ),
+            body: Column(
+        children: [
+          
+          Expanded(
+            flex: 8,
+            child: Stack(
+              alignment: Alignment.center,
+              children: [
+                Image.network(
+                  "https://ohmymi.com.my/wp-content/uploads/2021/03/vw-golf-mk7-2012-2018-brake-pads-kit.png",
+                  fit: BoxFit.contain,
+                  width: double.infinity,
+                  height: double.infinity,
+                ),
+                Positioned(
+                  top: 20, 
+                  left: 20,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: const [
+                      Text(
+                        "Plaka: 35XYZ789               Plaka: 34ABC12",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black,
+                        ),
+                      ),
+                      SizedBox(height: 5),
+                      
+                      
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+          
+          Expanded(
+            flex: 5,
+            child: Stack(
+              alignment: Alignment.center,
+              children: [
+                Image.network(
+                  "https://cdn.pixabay.com/photo/2018/04/25/21/11/motorcycle-3350600_960_720.png",
+                  fit: BoxFit.contain,
+                  width: double.infinity,
+                  height: double.infinity,
+                ),
+                Positioned(
+                  top: 20, // 
+                  left: 20,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: const [
+                     
+                      SizedBox(height: 5), 
+                      
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
 
       // Drawer (Yan Menü)
       drawer: Drawer(
@@ -32,20 +98,23 @@ class HomeScreen extends StatelessWidget {
           children: [
             // Drawer Header
             Container(
+              
               height: 200,
               // color: Colors.blue,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Icon(
-                    CupertinoIcons.person_circle,
-                    size: 80,
-                    color: Colors.black,
-                  ),
+                 // const Icon(
+                   // CupertinoIcons.person_circle,
+                   // size: 80,
+                  //  color: Colors.black,
+                 // ),
                   const SizedBox(height: 10),
                  SizedBox(
+                  
                 width: 110,
-                child: DotLottieLoader.fromAsset("assets/motions/loading.lottie",
+                height: 110,
+                child: DotLottieLoader.fromAsset("assets/motions/s.lottie",
                       frameBuilder: (BuildContext ctx, DotLottie? dotlottie) {
                     if (dotlottie != null) {
                       return Lottie.memory(dotlottie.animations.values.single);
@@ -54,6 +123,19 @@ class HomeScreen extends StatelessWidget {
                     }
                   }),
               ),
+              // güzel bir lottie eklemek istedim ekleyemedim
+              // SizedBox(
+              //   width: 110,
+              //   child: DotLottieLoader.fromAsset("assets/motions/loading.lottie",
+              //         frameBuilder: (BuildContext ctx, DotLottie? dotlottie) {
+              //       if (dotlottie != null) {
+              //         return Lottie.memory(dotlottie.animations.values.single);
+              //       } else {
+              //         return Container();
+              //       }
+              //     }),
+              // ),
+
                 ],
               ),
             ),
@@ -108,26 +190,6 @@ class HomeScreen extends StatelessWidget {
       ),
 
       // Ana içerik
-      body: Column(
-        children: [
-          Expanded(
-            child: Container(
-              padding: const EdgeInsets.all(16),
-              child: SizedBox(
-                width: 450,
-                child: DotLottieLoader.fromAsset("assets/motions/a.lottie",
-                      frameBuilder: (BuildContext ctx, DotLottie? dotlottie) {
-                    if (dotlottie != null) {
-                      return Lottie.memory(dotlottie.animations.values.single);
-                    } else {
-                      return Container();
-                    }
-                  }),
-              ),
-            ),
-          ),
-        ],
-      ),
 
       // Alt navigasyon çubuğu
       bottomNavigationBar: const BottomMenu()
