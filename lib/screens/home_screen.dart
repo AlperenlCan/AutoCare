@@ -2,6 +2,7 @@ import 'package:dotlottie_loader/dotlottie_loader.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_app/core/constants.dart';
+import 'package:flutter_app/screens/theme_screen.dart';
 import 'package:go_router/go_router.dart';
 import 'package:lottie/lottie.dart';
 
@@ -16,11 +17,13 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: arkaplanrengim,
       // AppBar
       appBar: AppBar(
-        title: const Text('Auto Care'),
+        backgroundColor: Color.fromRGBO(253, 127, 38, 1),
+        title: const Text('Auto Care', style: TextStyle(color: Colors.black),),
         actions: [
           IconButton(
-            icon: const Icon(CupertinoIcons.bell),
-            onPressed: () {},
+            icon: const Icon(CupertinoIcons.bell,color:Colors.black,),
+            onPressed: () {context.go("/theme_screen");},
+            
           ), 
         ],
       ),
@@ -33,7 +36,7 @@ class HomeScreen extends StatelessWidget {
               alignment: Alignment.center,
               children: [
                 Image.network(
-                  "https://ohmymi.com.my/wp-content/uploads/2021/03/vw-golf-mk7-2012-2018-brake-pads-kit.png",
+                  "https://ms-prd-nna.use.mediaserver.heliosnissan.net/iris/iris?resp=png&bkgnd=transparent&pov=E01&w=8667&h=8667&x=797&y=222&height=326&width=578&vehicle=8_R35&paint=GAG&fabric=D&brand=nisnna&sa=1_G,2_LR,4_N,5_L,6_Y,7_3,11_Z,12_U,13_A,14_7,15_G,SHADOW_ON,PI_ON,PE_ON,2024",
                   fit: BoxFit.contain,
                   width: double.infinity,
                   height: double.infinity,
@@ -63,7 +66,7 @@ class HomeScreen extends StatelessWidget {
           ),
           
           Expanded(
-            flex: 5,
+            flex: 4,
             child: Stack(
               alignment: Alignment.center,
               children: [
@@ -93,7 +96,7 @@ class HomeScreen extends StatelessWidget {
 
       // Drawer (Yan Menü)
       drawer: Drawer(
-              backgroundColor: arkaplanrengim,
+              backgroundColor: Color.fromRGBO(252, 139, 87, 1),
         child: Column(
           children: [
             // Drawer Header
@@ -143,46 +146,39 @@ class HomeScreen extends StatelessWidget {
 
             // Menü öğeleri
             ListTile(
-              leading: const Icon(Icons.brightness_6),
+              leading: const Icon(Icons.brightness_6, color:Colors.black,),
               title: const Text('Tema seçimi'),
               onTap: () {
-                Navigator.pop(context);
+                context.go("/theme_screen");
               },
             ),
             ListTile(
-              leading: const Icon(Icons.notifications),
+              leading: const Icon(Icons.notifications, color:Colors.black),
               title: const Text('Bildirimler'),
               onTap: () {
-                Navigator.pop(context);
+                context.go("/natification");
               },
             ),
             ListTile(
-              leading: const Icon(Icons.language),
+              leading: const Icon(Icons.language, color:Colors.black),
               title: const Text('Dil seçimi'),
               onTap: () {
-                Navigator.pop(context);
+                context.go("/theme_screen");
               },
             ),
             ListTile(
-              leading: const Icon(Icons.lock),
-              title: const Text('Şifre değiştir'),
-              onTap: () {
-                Navigator.pop(context);
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.exit_to_app),
+              leading: const Icon(Icons.exit_to_app, color:Colors.black),
               title: const Text('Çıkış yap'),
               onTap: () {
-                Navigator.pop(context);
+                context.go("/theme_screen");
               },
             ),
 
             ListTile(
-              leading: const Icon(CupertinoIcons.settings),
+              leading: const Icon(CupertinoIcons.settings, color:Colors.black),
               title: const Text('Uygulama Hakkında'),
               onTap: () {
-                Navigator.pop(context);
+                context.go("/theme_screen");
               },
             ),
           ],

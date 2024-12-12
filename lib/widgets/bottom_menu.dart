@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 
 class BottomMenu extends StatelessWidget {
   const BottomMenu({
+    
     super.key,
   });
 
@@ -11,12 +12,14 @@ class BottomMenu extends StatelessWidget {
     return Container(
       height: 70,
       child: Row(
+        
         mainAxisAlignment: MainAxisAlignment.spaceAround ,
         children: [
           IconButton(
             onPressed: () {context.go("/home");},
              icon: Icon(
               Icons.home,
+              color: Colors.black,
             ),
           ),
          
@@ -24,12 +27,14 @@ class BottomMenu extends StatelessWidget {
             onPressed: () { context.go("/service_info");},
              icon: Icon(
               Icons.car_crash,
+              color: Colors.black,
             ),
           ),
           IconButton(
             onPressed: () { context.go("/profile");},
              icon: Icon(
               Icons.person,
+              color: Colors.black,
             ),
           ),
         ],

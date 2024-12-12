@@ -1,3 +1,3 @@
 import 'package:flutter/widgets.dart';
 
-const arkaplanrengim = Color.fromARGB(255, 255, 255, 255);
+const arkaplanrengim = Color.fromARGB(171, 241, 140, 57);
