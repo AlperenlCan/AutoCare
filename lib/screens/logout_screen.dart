@@ -6,14 +6,14 @@ import 'package:go_router/go_router.dart';
 import '../core/constants.dart';
 import '../widgets/bottom_menu.dart';
 
-class ThemeScreen extends StatefulWidget {
-  const ThemeScreen({super.key});
+class Logout_screen extends StatefulWidget {
+  const Logout_screen({super.key});
 
   @override
-  State<ThemeScreen> createState() => _ThemeScreenState();
+  State<Logout_screen> createState() => _Logout_screenState();
 }
 
-class _ThemeScreenState extends State<ThemeScreen> {
+class _Logout_screenState extends State<Logout_screen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +30,7 @@ class _ThemeScreenState extends State<ThemeScreen> {
                     backgroundColor: arkaplanrengim,
 
       body: Center(
-        child: Text("Profilssss"),
+        child: Text("ıkış"),
       ),
       bottomNavigationBar: BottomMenu()
     );

@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
         actions: [
           IconButton(
             icon: const Icon(CupertinoIcons.bell,color:Colors.black,),
-            onPressed: () {context.go("/theme_screen");},
+            onPressed: () {context.go("/Setting_screen");},
             
           ), 
         ],
@@ -163,14 +163,14 @@ class HomeScreen extends StatelessWidget {
               leading: const Icon(Icons.language, color:Colors.black),
               title: const Text('Dil seçimi'),
               onTap: () {
-                context.go("/theme_screen");
+                context.go("/Language_screen");
               },
             ),
             ListTile(
               leading: const Icon(Icons.exit_to_app, color:Colors.black),
               title: const Text('Çıkış yap'),
               onTap: () {
-                context.go("/theme_screen");
+                context.go("/Logout_screen");
               },
             ),
 
@@ -178,7 +178,7 @@ class HomeScreen extends StatelessWidget {
               leading: const Icon(CupertinoIcons.settings, color:Colors.black),
               title: const Text('Uygulama Hakkında'),
               onTap: () {
-                context.go("/theme_screen");
+                context.go("/Info_screen");
               },
             ),
           ],

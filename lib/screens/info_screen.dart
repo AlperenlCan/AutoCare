@@ -6,14 +6,14 @@ import 'package:go_router/go_router.dart';
 import '../core/constants.dart';
 import '../widgets/bottom_menu.dart';
 
-class ThemeScreen extends StatefulWidget {
-  const ThemeScreen({super.key});
+class Info_screen extends StatefulWidget {
+  const Info_screen({super.key});
 
   @override
-  State<ThemeScreen> createState() => _ThemeScreenState();
+  State<Info_screen> createState() => _Info_screenState();
 }
 
-class _ThemeScreenState extends State<ThemeScreen> {
+class _Info_screenState extends State<Info_screen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +30,7 @@ class _ThemeScreenState extends State<ThemeScreen> {
                     backgroundColor: arkaplanrengim,
 
       body: Center(
-        child: Text("Profilssss"),
+        child: Text("Hakkında"),
       ),
       bottomNavigationBar: BottomMenu()
     );
