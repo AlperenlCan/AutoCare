@@ -21,7 +21,7 @@ class HomeScreen extends StatelessWidget {
         title: const Text('Auto Care', style: TextStyle(color: Colors.black),),
         actions: [
           IconButton(
-            icon: const Icon(CupertinoIcons.bell,color:Colors.black,),
+            icon: const Icon(CupertinoIcons.settings,color:Colors.black,),
             onPressed: () {context.go("/Setting_screen");},
             
           ), 
@@ -48,7 +48,15 @@ class HomeScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: const [
                       Text(
-                        "Plaka: 35XYZ789               Plaka: 34ABC12",
+                        "Plaka: 35XYZ789 ",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black,
+                        ),
+                      ),
+                      Text(
+                        "Plaka: 34ABC123",
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -117,14 +125,10 @@ class HomeScreen extends StatelessWidget {
                   
                 width: 110,
                 height: 110,
-                child: DotLottieLoader.fromAsset("assets/motions/s.lottie",
-                      frameBuilder: (BuildContext ctx, DotLottie? dotlottie) {
-                    if (dotlottie != null) {
-                      return Lottie.memory(dotlottie.animations.values.single);
-                    } else {
-                      return Container();
-                    }
-                  }),
+                child: Image.asset(
+                'assets/images/logo.png',
+                fit: BoxFit.contain,
+              ),
               ),
               // güzel bir lottie eklemek istedim ekleyemedim
               // SizedBox(
@@ -175,7 +179,7 @@ class HomeScreen extends StatelessWidget {
             ),
 
             ListTile(
-              leading: const Icon(CupertinoIcons.settings, color:Colors.black),
+              leading: const Icon(CupertinoIcons.info_circle_fill, color:Colors.black),
               title: const Text('Uygulama Hakkında'),
               onTap: () {
                 context.go("/Info_screen");

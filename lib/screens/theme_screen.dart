@@ -30,7 +30,7 @@ class _ThemeScreenState extends State<ThemeScreen> {
                     backgroundColor: arkaplanrengim,
 
       body: Center(
-        child: Text("Profilssss"),
+        child: Text("Tema"),
       ),
       bottomNavigationBar: BottomMenu()
     );
