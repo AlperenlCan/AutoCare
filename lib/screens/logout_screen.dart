@@ -18,7 +18,7 @@ class _Logout_screenState extends State<Logout_screen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: arkaplanrengim,
+          backgroundColor: Theme.of(context).colorScheme.surface,
           leading: IconButton(
           icon: const Icon(color: Colors.black, CupertinoIcons.back),
           onPressed: () {
@@ -27,7 +27,7 @@ class _Logout_screenState extends State<Logout_screen> {
         ),
 
         ),
-                    backgroundColor: arkaplanrengim,
+                  
 
       body: Center(
         child: Text("ıkış"),

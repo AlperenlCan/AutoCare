@@ -18,7 +18,7 @@ class _Info_screenState extends State<Info_screen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: arkaplanrengim,
+          backgroundColor: Theme.of(context).colorScheme.surface,
           leading: IconButton(
           icon: const Icon(color: Colors.black, CupertinoIcons.back),
           onPressed: () {
@@ -27,10 +27,23 @@ class _Info_screenState extends State<Info_screen> {
         ),
 
         ),
-                    backgroundColor: arkaplanrengim,
+                  
 
       body: Center(
-        child: Text("Hakkında"),
+        child: Text(    'Sürüm 1.4.27\n'  
+    'Yayın Tarihi: 29 Ocak 2025\n'  
+    'Yeni Özellikler:\n'  
+    '- Gelişmiş kullanıcı arayüzü\n'  
+    '- Artırılmış performans optimizasyonları\n'  
+    '- Kullanıcı geri bildirimlerine dayalı yeni ayarlar\n\n'  
+    'Düzeltmeler:\n'  
+    '- Hatalı bildirim sorunları düzeltildi.\n'  
+    '- Uygulama çökmesine neden olan bazı hatalar giderildi.',  
+    style: TextStyle(
+      fontSize: 20 ,
+      color: Colors.black
+    ),
+      ),
       ),
       bottomNavigationBar: BottomMenu()
     );

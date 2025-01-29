@@ -24,7 +24,7 @@ class BottomMenu extends StatelessWidget {
           ),
          
           IconButton(
-            onPressed: () { context.go("/service_info");},
+            onPressed: () { context.go("/profile");},
              icon: Icon(
               Icons.car_crash,
               color: Colors.black,

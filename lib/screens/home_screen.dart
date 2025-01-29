@@ -14,7 +14,6 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: arkaplanrengim,
       // AppBar
       appBar: AppBar(
         backgroundColor: Color.fromRGBO(253, 127, 38, 1),
@@ -47,6 +46,7 @@ class HomeScreen extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: const [
+                      
                       Text(
                         "Plaka: 35XYZ789 ",
                         style: TextStyle(
@@ -151,9 +151,9 @@ class HomeScreen extends StatelessWidget {
             // Menü öğeleri
             ListTile(
               leading: const Icon(Icons.brightness_6, color:Colors.black,),
-              title: const Text('Tema seçimi'),
+              title: const Text('Profil'),
               onTap: () {
-                context.go("/theme_screen");
+                context.go("/profile");
               },
             ),
             ListTile(

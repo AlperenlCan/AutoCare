@@ -18,7 +18,7 @@ class _NatificationState extends State<Natification> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: arkaplanrengim,
+          backgroundColor: Theme.of(context).colorScheme.surface,
           leading: IconButton(
           icon: const Icon(color: Colors.black, CupertinoIcons.back),
           onPressed: () {
@@ -27,7 +27,7 @@ class _NatificationState extends State<Natification> {
         ),
 
         ),
-                    backgroundColor: arkaplanrengim,
+                    
 
       body: Center(
         child: Text("Natification"),
