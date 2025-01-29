@@ -20,6 +20,7 @@ class Language_screenState extends State<Language_screen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+          
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.surface,
           leading: IconButton(
@@ -33,8 +34,9 @@ class Language_screenState extends State<Language_screen> {
                    
 
       body: Center(
-        child: Text("language"),
-      ),
+                                  child: Text("language",
+                                  ),
+                                ),
       bottomNavigationBar: BottomMenu()
     );
   }

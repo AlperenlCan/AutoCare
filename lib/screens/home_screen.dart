@@ -14,6 +14,8 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+            backgroundColor: Theme.of(context).colorScheme.surface,
+
       // AppBar
       appBar: AppBar(
         backgroundColor: Color.fromRGBO(253, 127, 38, 1),
@@ -150,10 +152,10 @@ class HomeScreen extends StatelessWidget {
 
             // Menü öğeleri
             ListTile(
-              leading: const Icon(Icons.brightness_6, color:Colors.black,),
+              leading: const Icon(Icons.person_rounded, color:Colors.black,),
               title: const Text('Profil'),
               onTap: () {
-                context.go("/profile");
+                context.go("/theme_screen");
               },
             ),
             ListTile(

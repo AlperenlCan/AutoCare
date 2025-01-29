@@ -17,6 +17,7 @@ class _NatificationState extends State<Natification> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+          backgroundColor: Theme.of(context).colorScheme.surface,
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.surface,
           leading: IconButton(

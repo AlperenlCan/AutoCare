@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import '../widgets/bottom_menu.dart';
 
-class Car1 extends StatelessWidget {
-  const Car1({super.key});
+class ServiceInfo extends StatelessWidget {
+  const ServiceInfo({super.key});
 
   @override
   Widget build(BuildContext context) {

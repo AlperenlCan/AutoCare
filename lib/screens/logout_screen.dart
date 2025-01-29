@@ -17,6 +17,7 @@ class _Logout_screenState extends State<Logout_screen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+          backgroundColor: Theme.of(context).colorScheme.surface,
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.surface,
           leading: IconButton(

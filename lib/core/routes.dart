@@ -26,12 +26,12 @@ final router = GoRouter(
       builder: (context, state) => const HomeScreen(),
     ),
     GoRoute(
-      path: '/car_2',
-      builder: (context, state) => const Car2(),
+      path: '/profile',
+      builder: (context, state) => const ProfileScreen(),
     ),
     GoRoute(
-      path: '/car_1',
-      builder: (context, state) => const Car1(),
+      path: '/service_info',
+      builder: (context, state) => const ServiceInfo(),
     ),
     GoRoute(
       path: '/theme_screen',
