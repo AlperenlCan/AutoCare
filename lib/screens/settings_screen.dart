@@ -28,7 +28,10 @@ class _Setting_screenState extends State<Setting_screen> {
             },
           ),
         ),
-        body: ListTile(
+        body: ListView(
+          children: [
+            
+            ListTile(
           leading: Icon(Icons.brightness_6, color: Colors.black,),
           title: Text(
             'Tema',
@@ -41,15 +44,29 @@ class _Setting_screenState extends State<Setting_screen> {
           ),
           trailing: Switch(
             value: Theme.of(context).brightness == Brightness.dark,
-            activeColor: Colors.orange,  // Açık durumda turuncu
-            activeTrackColor: Colors.orange.withOpacity(0.5), // Track rengi yarı saydam
-            inactiveThumbColor: Colors.orange, // Kapalı durumda turuncu
-            inactiveTrackColor: Colors.orange.withOpacity(0.3), // Kapalı track rengi
+            activeColor: Colors.orange,  
+            activeTrackColor: Colors.orange.withOpacity(0.5), 
+            inactiveThumbColor: Colors.orange, 
+            inactiveTrackColor: Colors.orange.withOpacity(0.3), 
             onChanged: (value) {
               context.read<ThemeProvider>().toggleTheme();
             },
           ),
         ),
+        ListTile(
+            leading: Icon(Icons.delete, color: Colors.red),
+            title: Text(
+              'Hesabı Sil',
+              style: TextStyle(color: Colors.red),
+            ),
+            onTap: () {},
+          ),
+          ],
+        ),
+        
+        
+        
+        
         bottomNavigationBar: BottomMenu()
     );
   }

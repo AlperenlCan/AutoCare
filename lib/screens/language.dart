@@ -33,10 +33,46 @@ class Language_screenState extends State<Language_screen> {
         ),
                    
 
-      body: Center(
-                                  child: Text("language",
-                                  ),
-                                ),
+      body: ListTile(
+      leading: Icon(
+        Icons.language, 
+        color: Colors.black87,
+      ),
+      title: Text(
+        'Dil',
+        style: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.w500,
+          color: Colors.black87,
+        ),
+      ),
+      trailing: Container(
+        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+        decoration: BoxDecoration(
+          border: Border.all(color: Colors.grey.shade300),
+          borderRadius: BorderRadius.circular(8),
+        ),
+        child: DropdownButton<String>(
+          value: 'TR',
+          underline: SizedBox(), 
+          icon: Icon(Icons.arrow_drop_down, color: Colors.grey),
+          isDense: true,
+          items: [
+            DropdownMenuItem(
+              value: 'TR',
+              child: Text('Türkçe'),
+            ),
+            DropdownMenuItem(
+              value: 'EN', 
+              child: Text('English'),
+            ),
+          ],
+          onChanged: (String? value) {
+            
+          },
+        ),
+      ),
+      ),
       bottomNavigationBar: BottomMenu()
     );
   }

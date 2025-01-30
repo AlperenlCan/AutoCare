@@ -31,7 +31,7 @@ TextEditingController kullaniciYonetici = TextEditingController();
   else{
     if(sifreYonetici.text.length < 8){
       ScaffoldMessenger.of(context)
-      .showSnackBar(SnackBar(content: Text("Şifre minimum 8 haneli"),
+      .showSnackBar(SnackBar(content: Text("Şifre minimum 8 hane olmalı"),
       behavior: SnackBarBehavior.floating,
       backgroundColor: Colors.orange,
       showCloseIcon: true,
@@ -75,6 +75,7 @@ class _ThemeScreenState extends State<ThemeScreen> {
                 child: Text("Giriş Yapınız"),
               ),
               TextField(
+                controller: kullaniciYonetici,
                 decoration: InputDecoration(
                   hintText: "Kullanıcı adı",
                   border: OutlineInputBorder()
@@ -83,6 +84,7 @@ class _ThemeScreenState extends State<ThemeScreen> {
               SizedBox(height: 10,),
 
               TextField(
+                controller: sifreYonetici,
                 obscureText: true,
                 decoration: InputDecoration(
                   hintText: "Şifre",

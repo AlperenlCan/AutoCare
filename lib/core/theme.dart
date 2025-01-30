@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ThemeProvider with ChangeNotifier {
   bool _isDark = false;
@@ -47,6 +48,25 @@ final lightTheme = ThemeData(
     surface: colors["surface"]!,
     onSurface: colors["onSurface"]!,
   ),
+  textTheme: TextTheme(
+    bodySmall: GoogleFonts.roboto(
+        // fontSize: 32,
+        ),
+    bodyMedium: GoogleFonts.pridi(),
+    bodyLarge: GoogleFonts.pridi(),
+    labelSmall: GoogleFonts.pridi(),
+    labelMedium: GoogleFonts.pridi(),
+    labelLarge: GoogleFonts.pridi(),
+    titleSmall: GoogleFonts.pridi(),
+    titleMedium: GoogleFonts.pridi(),
+    titleLarge: GoogleFonts.pridi(),
+    headlineSmall: GoogleFonts.pridi(),
+    headlineMedium: GoogleFonts.pridi(),
+    headlineLarge: GoogleFonts.pridi(),
+    displaySmall: GoogleFonts.pridi(),
+    displayMedium: GoogleFonts.pridi(),
+    displayLarge: GoogleFonts.pridi(),
+),
 );
 
 final darkTheme = ThemeData(
@@ -62,4 +82,23 @@ final darkTheme = ThemeData(
     surface: darkColors["surface"]!,
     onSurface: darkColors["onSurface"]!,
   ),
+  textTheme: TextTheme(
+    bodySmall: GoogleFonts.roboto(
+        // fontSize: 30,
+        ),
+    bodyMedium: GoogleFonts.pridi(),
+    bodyLarge: GoogleFonts.pridi(),
+    labelSmall: GoogleFonts.pridi(),
+    labelMedium: GoogleFonts.pridi(),
+    labelLarge: GoogleFonts.pridi(),
+    titleSmall: GoogleFonts.pridi(),
+    titleMedium: GoogleFonts.pridi(),
+    titleLarge: GoogleFonts.pridi(),
+    headlineSmall: GoogleFonts.pridi(),
+    headlineMedium: GoogleFonts.pridi(),
+    headlineLarge: GoogleFonts.pridi(),
+    displaySmall: GoogleFonts.pridi(),
+    displayMedium: GoogleFonts.pridi(),
+    displayLarge: GoogleFonts.pridi(),
+),
 );
