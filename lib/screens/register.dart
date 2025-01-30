@@ -15,7 +15,26 @@ class RegisterScreen extends StatefulWidget {
   State<RegisterScreen> createState() => _RegisterScreenState();
 }
 
+
 class _RegisterScreenState extends State<RegisterScreen> {
+  TextEditingController kullaniciYonetici = TextEditingController();
+  TextEditingController sifreYonetici = TextEditingController();
+  girisYap() {
+  if(kullaniciYonetici.text.isEmpty || sifreYonetici.text.isEmpty ) {
+    ScaffoldMessenger.of(context)
+      .showSnackBar(SnackBar(content: Text("Bilgilerinizi Girin"),
+      behavior: SnackBarBehavior.floating,
+      backgroundColor: Colors.orange,
+      showCloseIcon: true,
+
+      ),
+      );
+  }
+  else{
+    context.go("/home");
+  }
+
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,7 +69,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               ),
               SizedBox(height: 10,),
               TextField(
-                obscureText: true,
+                
                 decoration: InputDecoration(
                   hintText: "Soyisim",
                   border: OutlineInputBorder(),
@@ -58,6 +77,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               ),
               SizedBox(height: 10),
               TextField(
+                controller: kullaniciYonetici,
                 decoration: InputDecoration(
                   hintText: "Kullanıcı adı",
                   border: OutlineInputBorder()
@@ -66,6 +86,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
               SizedBox(height: 10),
               TextField(
                 obscureText: true,
+                controller: sifreYonetici,
+
                 decoration: InputDecoration(
                   hintText: "Şifre",
                   border: OutlineInputBorder(),
@@ -77,9 +99,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               
               SizedBox(height: 10),
               ElevatedButton(
-                onPressed: () { 
-                  context.push("/theme_screen");
-              },
+                onPressed: girisYap,
               child: const Text("Kayıt ol"),
               ),
             ],

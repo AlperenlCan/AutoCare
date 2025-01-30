@@ -15,6 +15,38 @@ class ThemeScreen extends StatefulWidget {
   State<ThemeScreen> createState() => _ThemeScreenState();
 }
 
+TextEditingController kullaniciYonetici = TextEditingController();
+  TextEditingController sifreYonetici = TextEditingController();
+  void girisYap(BuildContext context){
+  if(kullaniciYonetici.text.isEmpty || sifreYonetici.text.isEmpty ) {
+    ScaffoldMessenger.of(context)
+      .showSnackBar(SnackBar(content: Text("Bilgilerinizi Girin"),
+      behavior: SnackBarBehavior.floating,
+      backgroundColor: Colors.orange,
+      showCloseIcon: true,
+
+      ),
+      );
+  }
+  else{
+    if(sifreYonetici.text.length < 8){
+      ScaffoldMessenger.of(context)
+      .showSnackBar(SnackBar(content: Text("Şifre minimum 8 haneli"),
+      behavior: SnackBarBehavior.floating,
+      backgroundColor: Colors.orange,
+      showCloseIcon: true,
+
+      ),
+      );
+    }
+    else{
+    context.go("/home");
+
+    }
+  }
+
+  }
+
 class _ThemeScreenState extends State<ThemeScreen> {
   @override
   Widget build(BuildContext context) {
@@ -59,10 +91,10 @@ class _ThemeScreenState extends State<ThemeScreen> {
               ),
               SizedBox(height: 10),
               ElevatedButton(
-                onPressed: () { 
-                  context.go("/home");
-              },
-              child: const Text("Giriş yap"),
+                onPressed: () {
+                  girisYap(context);
+                },
+                child: Text("Giriş Yap"),
               ),
               SizedBox(height: 10),
               ElevatedButton(
