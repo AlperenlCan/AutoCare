@@ -118,6 +118,33 @@ lib/
 
 ## Ekran Görüntüleri
 
+<img src="https://github.com/AlperenlCan/AutoCare/blob/main/Ekran%20G%C3%B6r%C3%BCnt%C3%BCleri/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-01-30%20203032.png" width="400" height="800" />
+
+<img src="https://github.com/AlperenlCan/AutoCare/blob/main/Ekran%20G%C3%B6r%C3%BCnt%C3%BCleri/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-01-30%20203042.png" width="400" height="800" />
+
+<img src="https://github.com/AlperenlCan/AutoCare/blob/main/Ekran%20G%C3%B6r%C3%BCnt%C3%BCleri/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-01-30%20203057.png" width="400" height="800" />
+
+<img src="https://github.com/AlperenlCan/AutoCare/blob/main/Ekran%20G%C3%B6r%C3%BCnt%C3%BCleri/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-01-30%20203106.png" width="400" height="800" />
+
+<img src="https://github.com/AlperenlCan/AutoCare/blob/main/Ekran%20G%C3%B6r%C3%BCnt%C3%BCleri/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-01-30%20203120.png" width="400" height="800" />
+
+<img src="https://github.com/AlperenlCan/AutoCare/blob/main/Ekran%20G%C3%B6r%C3%BCnt%C3%BCleri/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-01-30%20203134.png" width="400" height="800" />
+
+<img src="https://github.com/AlperenlCan/AutoCare/blob/main/Ekran%20G%C3%B6r%C3%BCnt%C3%BCleri/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-01-30%20203146.png" width="400" height="800" />
+
+<img src="https://github.com/AlperenlCan/AutoCare/blob/main/Ekran%20G%C3%B6r%C3%BCnt%C3%BCleri/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-01-30%20203156.png" width="400" height="800" />
+
+<img src="https://github.com/AlperenlCan/AutoCare/blob/main/Ekran%20G%C3%B6r%C3%BCnt%C3%BCleri/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-01-30%20203206.png" width="400" height="800" />
+
+<img src="https://github.com/AlperenlCan/AutoCare/blob/main/Ekran%20G%C3%B6r%C3%BCnt%C3%BCleri/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-01-30%20203220.png" width="400" height="800" />
+
+<img src="https://github.com/AlperenlCan/AutoCare/blob/main/Ekran%20G%C3%B6r%C3%BCnt%C3%BCleri/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-01-30%20203246.png" width="400" height="800" />
+
+<img src="https://github.com/AlperenlCan/AutoCare/blob/main/Ekran%20G%C3%B6r%C3%BCnt%C3%BCleri/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-01-30%20203259.png" width="400" height="800" />
+
+<img src="https://github.com/AlperenlCan/AutoCare/blob/main/Ekran%20G%C3%B6r%C3%BCnt%C3%BCleri/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-01-30%20203316.png" width="400" height="800" />
+
+<img src="https://github.com/AlperenlCan/AutoCare/blob/main/Ekran%20G%C3%B6r%C3%BCnt%C3%BCleri/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-01-30%20203338.png" width="400" height="800" />
 
   
 
