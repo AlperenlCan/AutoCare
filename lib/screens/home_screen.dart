@@ -172,14 +172,7 @@ class HomeScreen extends StatelessWidget {
                 context.go("/Language_screen");
               },
             ),
-            ListTile(
-              leading: const Icon(Icons.exit_to_app, color:Colors.black),
-              title: const Text('Çıkış Yap'),
-              onTap: () {
-                context.go("/Logout_screen");
-              },
-            ),
-
+            
             ListTile(
               leading: const Icon(CupertinoIcons.info_circle_fill, color:Colors.black),
               title: const Text('Uygulama Hakkında'),
@@ -187,6 +180,15 @@ class HomeScreen extends StatelessWidget {
                 context.go("/Info_screen");
               },
             ),
+
+            ListTile(
+              leading: const Icon(Icons.exit_to_app, color:Colors.red),
+              title: const Text('Çıkış Yap',),
+              onTap: () {
+                
+              },
+            ),
+
           ],
         ),
       ),

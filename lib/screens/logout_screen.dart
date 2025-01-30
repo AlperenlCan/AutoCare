@@ -30,8 +30,17 @@ class _Logout_screenState extends State<Logout_screen> {
         ),
                   
 
-      body: Center(
-        child: Text("ıkış"),
+      body: ListView(
+        children: [
+          ListTile(
+            leading: Icon(Icons.delete, color: Colors.red),
+            title: Text(
+              'Hesabı Sil',
+              style: TextStyle(color: Colors.red),
+            ),
+            onTap: () {},
+          ),
+        ],
       ),
       bottomNavigationBar: BottomMenu()
     );
