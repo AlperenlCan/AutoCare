@@ -114,7 +114,7 @@ lib/
 ├── widgets/ bottom_menu , logo , main
 
 
-  
+  ```
 
 ## Ekran Görüntüleri
 
