@@ -2,7 +2,7 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_app/screens/car_1.dart';
-import 'package:flutter_app/screens/theme_screen.dart';
+import 'package:flutter_app/screens/profile_screen.dart';
 import 'package:go_router/go_router.dart';
 import '../screens/info_screen.dart';
 import '../screens/language.dart';
@@ -11,6 +11,7 @@ import '../screens/home_screen.dart';
 import '../screens/logout_screen.dart';
 import '../screens/natification.dart';
 import '../screens/car_2.dart';
+import '../screens/register.dart';
 import '../screens/settings_screen.dart';
 
 // Router yapılandırması
@@ -28,6 +29,10 @@ final router = GoRouter(
     GoRoute(
       path: '/profile',
       builder: (context, state) => const ProfileScreen(),
+    ),
+    GoRoute(
+      path: '/register',
+      builder: (context, state) => const RegisterScreen(),
     ),
     GoRoute(
       path: '/service_info',

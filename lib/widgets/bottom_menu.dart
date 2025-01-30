@@ -26,14 +26,14 @@ class BottomMenu extends StatelessWidget {
           IconButton(
             onPressed: () { context.go("/service_info");},
              icon: Icon(
-              Icons.car_crash,
+              Icons.car_crash_outlined,
               color: Colors.black,
             ),
           ),
           IconButton(
             onPressed: () { context.go("/profile");},
              icon: Icon(
-              Icons.person,
+              Icons.motorcycle_rounded,
               color: Colors.black,
             ),
           ),
