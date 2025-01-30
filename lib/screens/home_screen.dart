@@ -153,7 +153,7 @@ class HomeScreen extends StatelessWidget {
             // Menü öğeleri
             ListTile(
               leading: const Icon(Icons.person_rounded, color:Colors.black,),
-              title: const Text('Profil'),
+              title: const Text('Giriş Yap / Kayıt Ol'),
               onTap: () {
                 context.go("/theme_screen");
               },
@@ -167,14 +167,14 @@ class HomeScreen extends StatelessWidget {
             ),
             ListTile(
               leading: const Icon(Icons.language, color:Colors.black),
-              title: const Text('Dil seçimi'),
+              title: const Text('Dil Seçimi'),
               onTap: () {
                 context.go("/Language_screen");
               },
             ),
             ListTile(
               leading: const Icon(Icons.exit_to_app, color:Colors.black),
-              title: const Text('Çıkış yap'),
+              title: const Text('Çıkış Yap'),
               onTap: () {
                 context.go("/Logout_screen");
               },
