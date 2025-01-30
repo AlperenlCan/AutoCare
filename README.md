@@ -27,9 +27,9 @@
 
 ## Özellikler
 
-- [Ana özellik 1]
+- [Kolay ulaşılabilir arayüz]
 
-- [Ana özellik 2]
+- [Araç sahipleri için servis takip kolaylığı]
 
 - [Ana özellik 3]
 
@@ -41,7 +41,7 @@
 
 - Dart
 
-- [Diğer teknolojiler]
+
 
   
 
@@ -55,7 +55,7 @@
 
 - Dart SDK (sürüm X.X.X)
 
-- [Diğer gerekli yazılımlar]
+
 
   
 
@@ -65,7 +65,7 @@
 
 ```bash
 
-git  clone [proje-adresi]
+git  clone [https://github.com/AlperenlCan/AutoCare.git]
 
 ```
 
@@ -75,7 +75,7 @@ git  clone [proje-adresi]
 
 ```bash
 
-cd [proje-adı]
+cd [AutoCare]
 
 ```
 
@@ -109,35 +109,15 @@ lib/
 
 ├── modeller/ # Veri modelleri
 
-├── ekranlar/ # Uygulama ekranları
+├── ekranlar/ car_1 , car_2 , home_screeen , info_screen , language_screen , natification , profile_screen , register_screen , setting_screen
 
-├── widgets/ # Tekrar kullanılabilir arayüz öğeleri
+├── widgets/ bottom_menu , logo , main
 
-├── servisler/ # API servisleri
-
-└── yardımcılar/ # Yardımcı fonksiyonlar
-
-```
 
   
 
 ## Ekran Görüntüleri
 
-[Uygulama ekran görüntüleri buraya eklenecek]
-
-  
-
-## Projeye Katkı Sağlama
-
-1. Projeyi forklayın
-
-2. Yeni bir dal oluşturun (`git checkout -b ozellik/YeniOzellik`)
-
-3. Değişikliklerinizi kaydedin (`git commit -m 'Yeni özellik eklendi'`)
-
-4. Dalınıza gönderin (`git push origin ozellik/YeniOzellik`)
-
-5. Pull Request oluşturun
 
   
 
@@ -158,10 +138,3 @@ lib/
 ## Teşekkürler
 
 - İstinye Üniversitesi'ne destekleri için teşekkür ederiz
-
-- [Diğer teşekkürler]
-
-  
-  
-
-Bunlari degistirmeniz gerekmektedir ;-)
